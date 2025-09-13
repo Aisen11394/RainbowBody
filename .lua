@@ -7,9 +7,6 @@ local function applyRainbowEffect(character)
     for _, v in pairs(character:GetChildren()) do
         if v:IsA("MeshPart") or v.Name == "Head" then
             v.Material = Enum.Material.ForceField
-            if v.Name == "Head" then
-                v.Transparency = 0.3
-            end
         end
     end
     
